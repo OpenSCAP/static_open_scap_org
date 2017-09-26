@@ -1,8 +1,7 @@
 #!/bin/bash
 
-mkdir -p public_html
-rm -rf public_html/*
-cp -r template_public_html/* public_html/*
+rm -rf public_html
+cp -r template_public_html public_html
 pushd public_html
 wget https://jenkins.open-scap.org/job/static_openscap_docs/lastSuccessfulBuild/artifact/static.open-scap.org.zip
 unzip static.open-scap.org.zip
