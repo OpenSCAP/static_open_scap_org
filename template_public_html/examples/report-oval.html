@@ -1,0 +1,1639 @@
+<html xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:oval-res="http://oval.mitre.org/XMLSchema/oval-results-5" xmlns:oval-sc="http://oval.mitre.org/XMLSchema/oval-system-characteristics-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:apache-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#apache" xmlns:ind-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#independent" xmlns:windows-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows" xmlns:unix-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" xmlns:linux-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>OVAL Results</title>
+<style type="text/css">
+
+TD.title {BACKGROUND-COLOR: #000000; COLOR: #ffc; TEXT-ALIGN: left; font: bold 12pt/14pt "Arial"} 
+TD.label {BACKGROUND-COLOR: #99cc99; font: 10pt/12pt "Arial"}
+TD.label2 {font: bold 10pt/14pt "Arial"}
+TD.text {font: 10pt/12pt "Arial"}
+
+.trueA{background-color: #FFBC8F; font: 10pt/12pt "Arial"}
+.trueB{background-color: #FFE0CC; font: 10pt/12pt "Arial"}
+				
+.falseA{background-color: #ACD685; font: 10pt/12pt "Arial"}
+.falseB{background-color: #CBE6B3; font: 10pt/12pt "Arial"}
+				
+.unknownA{background-color: #AEC8E0; font: 10pt/12pt "Arial"}
+.unknownB{background-color: #DAE6F1; font: 10pt/12pt "Arial"}
+				
+.errorA{background-color: #FFDD75; font: 10pt/12pt "Arial"}
+.errorB{background-color: #FFECB3; font: 10pt/12pt "Arial"}
+				
+.naA{background-color: #EEEEEE; font: 10pt/12pt "Arial"}
+.naB{background-color: #FFFFFF; font: 10pt/12pt "Arial"}
+				
+.neA{background-color: #EEEEEE; font: 10pt/12pt "Arial"}
+.neB{background-color: #FFFFFF; font: 10pt/12pt "Arial"}
+
+		</style>
+</head>
+<body>
+<table border="1" cellpadding="0" cellspacing="0" width="100%"><tr>
+<td width="50%"><table border="1" cellspacing="0" cellpaddign="2" width="100%" bgcolor="#cccccc">
+<tr><td class="title" colspan="5">OVAL Results Generator Information</td></tr>
+<tr>
+<td class="label" nowrap>Schema Version</td>
+<td class="label" nowrap>Product Name</td>
+<td class="label" nowrap>Product Version</td>
+<td class="label">Date</td>
+<td class="label">Time</td>
+</tr>
+<td class="text">5.8 </td>
+<td class="text">cpe:/a:open-scap:oscap </td>
+<td class="text"> </td>
+<td class="text">2013-02-05</td>
+<td class="text">13:44:58  </td>
+</table></td>
+<td width="50%"><table border="1" cellspacing="0" cellpaddign="2" width="100%" bgcolor="#cccccc">
+<tr><td class="title" colspan="5">OVAL Definition Generator Information</td></tr>
+<tr>
+<td class="label" nowrap>Schema Version</td>
+<td class="label" nowrap>Product Name</td>
+<td class="label" nowrap>Product Version</td>
+<td class="label">Date</td>
+<td class="label">Time</td>
+</tr>
+<td class="text">5.8 </td>
+<td class="text">vim </td>
+<td class="text"> </td>
+<td class="text">2011-03-06</td>
+<td class="text">12:00:00  </td>
+</table></td>
+</tr></table>
+<br><table border="1" cellspacing="0" cellpaddign="2" width="100%" bgcolor="#cccccc">
+<tr><td class="title" colspan="2"><a name="1">System Information</a></td></tr>
+<tr>
+<td class="label2" width="20%">Host Name</td>
+<td class="text" width="80%">rhel-6-openscap </td>
+</tr>
+<tr>
+<td class="label2" width="20%">Operating System</td>
+<td class="text" width="80%">Linux </td>
+</tr>
+<tr>
+<td class="label2" width="20%">Operating System Version</td>
+<td class="text" width="80%">#1 SMP Sat Nov 24 14:35:28 EST 2012 </td>
+</tr>
+<tr>
+<td class="label2" width="20%">Architecture</td>
+<td class="text" width="80%">x86_64 </td>
+</tr>
+<tr>
+<td class="label2" width="20%">Interfaces</td>
+<td width="80%">
+<table border="1" cellpadding="1" cellspacing="0" width="100%" bgcolor="ffffff">
+<tr>
+<td class="label2" width="20%">Interface Name</td>
+<td class="text" width="80%">lo </td>
+</tr>
+<tr>
+<td class="label2" width="20%">IP Address</td>
+<td class="text" width="80%">127.0.0.1 </td>
+</tr>
+<tr>
+<td class="label2" width="20%">MAC Address</td>
+<td class="text" width="80%">00:00:00:00:00:00 </td>
+</tr>
+</table>
+<table border="1" cellpadding="1" cellspacing="0" width="100%" bgcolor="eeeeee">
+<tr>
+<td class="label2" width="20%">Interface Name</td>
+<td class="text" width="80%">eth0 </td>
+</tr>
+<tr>
+<td class="label2" width="20%">IP Address</td>
+<td class="text" width="80%">192.168.122.62 </td>
+</tr>
+<tr>
+<td class="label2" width="20%">MAC Address</td>
+<td class="text" width="80%">52:54:00:AA:D2:17 </td>
+</tr>
+</table>
+<table border="1" cellpadding="1" cellspacing="0" width="100%" bgcolor="ffffff">
+<tr>
+<td class="label2" width="20%">Interface Name</td>
+<td class="text" width="80%">lo </td>
+</tr>
+<tr>
+<td class="label2" width="20%">IP Address</td>
+<td class="text" width="80%">::1 </td>
+</tr>
+<tr>
+<td class="label2" width="20%">MAC Address</td>
+<td class="text" width="80%">00:00:00:00:00:00 </td>
+</tr>
+</table>
+<table border="1" cellpadding="1" cellspacing="0" width="100%" bgcolor="eeeeee">
+<tr>
+<td class="label2" width="20%">Interface Name</td>
+<td class="text" width="80%">eth0 </td>
+</tr>
+<tr>
+<td class="label2" width="20%">IP Address</td>
+<td class="text" width="80%">fe80::5054:ff:feaa:d217 </td>
+</tr>
+<tr>
+<td class="label2" width="20%">MAC Address</td>
+<td class="text" width="80%">52:54:00:AA:D2:17 </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border="1" cellspacing="0" cellpaddign="2" width="100%" bgcolor="#cccccc">
+<tr><td class="title" colspan="5">OVAL System Characteristics Generator Information</td></tr>
+<tr>
+<td class="label">Schema Version</td>
+<td class="label">Product Name</td>
+<td class="label">Product Version</td>
+<td class="label">Date</td>
+<td class="label">Time</td>
+</tr>
+<td class="text">5.8 </td>
+<td class="text">cpe:/a:open-scap:oscap </td>
+<td class="text"> </td>
+<td class="text">2013-02-05</td>
+<td class="text">13:44:58  </td>
+</table>
+<table border="1" cellspacing="0" cellpaddign="2" width="100%">
+<tr><td class="title" colspan="7">Oval Definition Results</td></tr>
+<tr><td colspan="7"><table border="0" cellspacing="0" cellpadding="0"><tr>
+<td>   </td>
+<td><table border="1" cellpadding="0" cellspacing="0"><tr>
+<td class="trueA" width="10"> </td>
+<td class="trueB" width="10"> </td>
+<td class="text"> True  </td>
+</tr></table></td>
+<td>   </td>
+<td><table border="1" cellpadding="0" cellspacing="0"><tr>
+<td class="falseA" width="10"> </td>
+<td class="falseB" width="10"> </td>
+<td class="text"> False  </td>
+</tr></table></td>
+<td>   </td>
+<td><table border="1" cellpadding="0" cellspacing="0"><tr>
+<td class="errorA" width="10"> </td>
+<td class="errorB" width="10"> </td>
+<td class="text"> Error  </td>
+</tr></table></td>
+<td>   </td>
+<td><table border="1" cellpadding="0" cellspacing="0"><tr>
+<td class="unknownA" width="10"> </td>
+<td class="unknownB" width="10"> </td>
+<td class="text"> Unknown  </td>
+</tr></table></td>
+<td>   </td>
+<td><table border="1" cellpadding="0" cellspacing="0"><tr>
+<td class="naA" width="10"> </td>
+<td class="naB" width="10"> </td>
+<td class="text"> Not Applicable  </td>
+</tr></table></td>
+<td>   </td>
+<td><table border="1" cellpadding="0" cellspacing="0"><tr>
+<td class="neA" width="10"> </td>
+<td class="neB" width="10"> </td>
+<td class="text"> Not Evaluated  </td>
+</tr></table></td>
+</tr></table></td></tr>
+<tr>
+<td class="label" align="center">OVAL ID</td>
+<td class="label" align="center">Result</td>
+<td class="label" align="center">Class</td>
+<td class="label" align="center">Reference ID</td>
+<td class="label" align="center">Title</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1127</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4292-9  
+				 
+			</td>
+<td class="text">Enable the auditd Service 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1126</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4182-2  
+				 
+			</td>
+<td class="text">Ensure All Logs are Rotated by logrotate 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1122</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-18240-2  
+				 
+			</td>
+<td class="text">Confirm Existence and Permissions of System Log Files  
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1121</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4366-1  
+				 
+			</td>
+<td class="text">Confirm Existence and Permissions of System Log Files  
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1120</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">TBD  
+				 
+			</td>
+<td class="text">Configure Rsyslog 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1112</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4189-7  
+				 
+			</td>
+<td class="text">Inspect and Activate Default Rules  
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1111</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4167-3  
+				 
+			</td>
+<td class="text">Verify ip6tables is enabled 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1109</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4287-9  
+				 
+			</td>
+<td class="text">Limit Network-Transmitted Configuration 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1108</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3895-0  
+				 
+			</td>
+<td class="text">Limit Network-Transmitted Configuration 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1107</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4287-9  
+				 
+			</td>
+<td class="text">Limit Network-Transmitted Configuration 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1106</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4128-5  
+				 
+			</td>
+<td class="text">Limit Network-Transmitted Configuration 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1105</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4058-4  
+				 
+			</td>
+<td class="text">Limit Network-Transmitted Configuration 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1104</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4221-8  
+				 
+			</td>
+<td class="text">Limit Network-Transmitted Configuration 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1103</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4159-0  
+				 
+			</td>
+<td class="text">Limit Network-Transmitted Configuration 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1099</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3840-6  
+				 
+			</td>
+<td class="text">Network Parameters for Hosts and Routers 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1097</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4265-5  
+				 
+			</td>
+<td class="text">Network Parameters for Hosts and Routers 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1096</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4133-5  
+				 
+			</td>
+<td class="text">Network Parameters for Hosts and Routers 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1095</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3644-2  
+				 
+			</td>
+<td class="text">Network Parameters for Hosts and Routers 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1094</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4320-8  
+				 
+			</td>
+<td class="text">Network Parameters for Hosts and Routers 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1093</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3339-9  
+				 
+			</td>
+<td class="text">Network Parameters for Hosts and Routers 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1092</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4186-3  
+				 
+			</td>
+<td class="text">Network Parameters for Hosts and Routers 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1091</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4091-5  
+				 
+			</td>
+<td class="text">Network Parameters for Hosts and Routers 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1090</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4320-8  
+				 
+			</td>
+<td class="text">Network Parameters for Hosts and Routers 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1089</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3472-8  
+				 
+			</td>
+<td class="text">Network Parameters for Hosts and Routers 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1087</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4236-6  
+				 
+			</td>
+<td class="text">Network Parameters for Hosts and Routers 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1083</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3668-1  
+				 
+			</td>
+<td class="text">Disable MCS Translation Service (mcstrans) if Possible 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1081</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3624-4  
+				 
+			</td>
+<td class="text">Set SELinux Polixy 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1080</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3999-0  
+				 
+			</td>
+<td class="text">Enable SELinux state 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1079</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3977-6  
+				 
+			</td>
+<td class="text">Enable SELinux 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1066</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3923-0  
+				 
+			</td>
+<td class="text">Set Boot Configuration Permissions 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1065</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4197-0  
+				 
+			</td>
+<td class="text">Set Boot Configuration Group 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1064</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4144-2  
+				 
+			</td>
+<td class="text">Set Boot Loader Configuration Owner 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1063</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">TBD  
+				 
+			</td>
+<td class="text">Ensure that Users Don't have .netrc files 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1061</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14107-7  
+				 
+			</td>
+<td class="text">Ensure that Users Have Sensible Umask Values in /etc/login.defs 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1060</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4227-5  
+				 
+			</td>
+<td class="text">Ensure that Users Have Sensible Umask Values set for csh 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1059</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center"> 
+				 
+			</td>
+<td class="text">Ensure that Users Have Sensible Umask Values set for bash 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1056</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14957-5  
+				 
+			</td>
+<td class="text">Write permissions are disabled for group and other in all directories in Root's Path 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1055</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3301-9  
+				 
+			</td>
+<td class="text">Ensure that No Dangerous Directories Exist in Root's Path 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1045</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-15054-0  
+				 
+			</td>
+<td class="text">Set Password retry Requirements 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1044</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4097-2  
+				 
+			</td>
+<td class="text">Set Password Expiration Parameters 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1043</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4092-3  
+				 
+			</td>
+<td class="text">Set Password Expiration Parameters 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1042</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4180-6  
+				 
+			</td>
+<td class="text">Set Password Expiration Parameters 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1041</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4009-7  
+				 
+			</td>
+<td class="text">Verify that No Non-Root Accounts Have UID 0 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1040</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14300-8  
+				 
+			</td>
+<td class="text">Verify that All Account Password Hashes are Shadowed 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1039</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4238-2  
+				 
+			</td>
+<td class="text">Verify that No Accounts Have Empty Password Fields 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1036</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14088-9  
+				 
+			</td>
+<td class="text">Limit su Access to the wheel group 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1033</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4146-7  
+				 
+			</td>
+<td class="text">Enable ExecShield randomized placement of virtual memory regions 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1032</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4168-1  
+				 
+			</td>
+<td class="text">Enable ExecShield 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1031</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4247-3  
+				 
+			</td>
+<td class="text">Disable Core Dumps for setuid programs 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1029</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4220-0  
+				 
+			</td>
+<td class="text">Set Daemon umask 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1028</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14794-2  
+				 
+			</td>
+<td class="text">Find world writable directories not owned by a system account 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1027</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3573-3  
+				 
+			</td>
+<td class="text">Find files unowned by a group 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1026</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4223-4  
+				 
+			</td>
+<td class="text">Find files unowned by a user 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1024</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4178-0  
+				 
+			</td>
+<td class="text">Find Unauthorized SGID System Executables 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1021</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3566-7  
+				 
+			</td>
+<td class="text">Verify permissions on 'passwd' file 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1020</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3932-1  
+				 
+			</td>
+<td class="text">Verify permissions on 'gshadow' file 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1019</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3967-7  
+				 
+			</td>
+<td class="text">Verify permissions on 'group' file 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1018</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4130-1  
+				 
+			</td>
+<td class="text">Verify permissions on 'shadow' file 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1017</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3495-9  
+				 
+			</td>
+<td class="text">Verify group who owns 'passwd' file 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1016</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3958-6  
+				 
+			</td>
+<td class="text">Verify user who owns 'passwd' file 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1015</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4064-2  
+				 
+			</td>
+<td class="text">Verify group who owns 'gshadow' file 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1014</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4210-1  
+				 
+			</td>
+<td class="text">Verify user who owns 'gshadow' file 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1013</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3883-6  
+				 
+			</td>
+<td class="text">Verify group who owns 'group' file 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1012</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3276-3  
+				 
+			</td>
+<td class="text">Verify user who owns 'group' file 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1011</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3988-3  
+				 
+			</td>
+<td class="text">Verify group who owns 'shadow' file 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1010</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3918-0  
+				 
+			</td>
+<td class="text">Verify user who owns 'shadow' file 
+			</td>
+</tr>
+<tr class="trueA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1007</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">TBD  
+				 
+			</td>
+<td class="text">Ensure gpgcheck is Globally Activated 
+			</td>
+</tr>
+<tr class="trueB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1005</td>
+<td class="text" align="center">true</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">TBD  
+				 
+			</td>
+<td class="text">Ensure that GPG Key for Red Hat is installed 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1142</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14692-8  
+				 
+			</td>
+<td class="text">Make the auditd Configuration Immutable 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1141</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14688-6  
+				 
+			</td>
+<td class="text">Ensure auditd Collects Information on Kernel Module Loading and Unloading 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1140</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14824-7  
+				 
+			</td>
+<td class="text">Ensure auditd Collects System Administrator Actions 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1139</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14820-5  
+				 
+			</td>
+<td class="text">Ensure auditd Collects Files Deletion Events by User (successful and unsuccessful) 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1138</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14569-8  
+				 
+			</td>
+<td class="text">Ensure auditd Collects Information on Exporting to Media (successful) 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1137</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14296-8  
+				 
+			</td>
+<td class="text">Ensure auditd Collects Information on the Use of Privileged Commands 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1136</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14917-9  
+				 
+			</td>
+<td class="text">Ensure auditd Collects Unauthorized Access Attempts to Files (unsuccessful) 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1135</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14058-2  
+				 
+			</td>
+<td class="text">Ensure auditd Collects Discretionary Access Control Permission Modification Events 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1134</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14679-5  
+				 
+			</td>
+<td class="text">Ensure auditd Collects Process and Session Initiation Information 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1133</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14904-7  
+				 
+			</td>
+<td class="text">Ensure auditd Collects Logon and Logout Events 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1132</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14821-3  
+				 
+			</td>
+<td class="text">Record Events that Modify the System’s Mandatory Access Controls 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1131</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14816-3  
+				 
+			</td>
+<td class="text">Record Events that Modify the System’s Network Environment 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1130</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14829-6  
+				 
+			</td>
+<td class="text">Record Events that Modify User/Group Information 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1129</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14051-7  
+				 
+			</td>
+<td class="text">Records Events that Modify Date and Time Information 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1128</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-15026-8  
+				 
+			</td>
+<td class="text">Enable Auditing for Processes Which Start Prior to the Audit Daemon 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1124</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-17248-6  
+				 
+			</td>
+<td class="text">Send Logs to a Remote Loghost  
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1123</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-18095-0  
+				 
+			</td>
+<td class="text">Confirm Existence and Permissions of System Log Files  
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1119</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14027-7  
+				 
+			</td>
+<td class="text">Disable Support for RDS 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1118</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14132-5  
+				 
+			</td>
+<td class="text">Disable Support for SCTP 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1117</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14268-7  
+				 
+			</td>
+<td class="text">Disable Support for DCCP 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1116</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">TBD  
+				 
+			</td>
+<td class="text">Log and Drop All Other Packets 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1115</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">TBD  
+				 
+			</td>
+<td class="text">Restrict ICMP message types 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1114</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">TBD  
+				 
+			</td>
+<td class="text">Change the default policy to DROP (from ACCEPT) for the FORWARD built-in chain 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1113</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14264-6  
+				 
+			</td>
+<td class="text">Change the default policy to DROP (from ACCEPT) for the INPUT built-in chain 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1110</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">TBD  
+				 
+			</td>
+<td class="text">Reject Connections in TCP Wrapper by Default 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1102</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center"> 
+				 
+			</td>
+<td class="text">Disable Automatic Configuration 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1101</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3562-6  
+				 
+			</td>
+<td class="text">Disable Automatic Loading of IPv6 Kernel Module 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1100</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4276-2  
+				 
+			</td>
+<td class="text">Deactivate Wireless Interfaces 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1098</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4080-8  
+				 
+			</td>
+<td class="text">Network Parameters for Hosts and Routers 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1088</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4217-6  
+				 
+			</td>
+<td class="text">Network Parameters for Hosts and Routers 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1086</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3561-8  
+				 
+			</td>
+<td class="text">Network Parameters for Hosts Only 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1085</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4155-8  
+				 
+			</td>
+<td class="text">Network Parameters for Hosts Only 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1084</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4151-7  
+				 
+			</td>
+<td class="text">Network Parameters for Hosts Only 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1082</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4148-3  
+				 
+			</td>
+<td class="text">Remove SETroubleshoot if Possible 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1078</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4188-9  
+				 
+			</td>
+<td class="text">Implement a GUI Warning Banner 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1077</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4060-0  
+				 
+			</td>
+<td class="text">Modify the System Login Banner 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1076</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3910-7  
+				 
+			</td>
+<td class="text">Configure GUI Screen Locking 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1075</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14735-5  
+				 
+			</td>
+<td class="text">Implement blank screen saver 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1074</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14023-6  
+				 
+			</td>
+<td class="text">Lock the screensaver with a password 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1073</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14604-3  
+				 
+			</td>
+<td class="text">Implement idle activation of screen saver 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1072</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3315-9  
+				 
+			</td>
+<td class="text">Configure GUI Screen Locking 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1071</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3707-7  
+				 
+			</td>
+<td class="text">Implement Inactivity Time-out for C Shells 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1070</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3707-7  
+				 
+			</td>
+<td class="text">Implement Inactivity Time-out for Bourne Shells 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1069</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4245-7  
+				 
+			</td>
+<td class="text">Disable Interactive Boot 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1068</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4241-6  
+				 
+			</td>
+<td class="text">Require Authentication for Single-User Mode 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1067</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3818-2  
+				 
+			</td>
+<td class="text">Set Boot Loader Password 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1062</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">TBD  
+				 
+			</td>
+<td class="text">Ensure that Users Have Sensible Umask Values set in /etc/profile 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1058</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">TBD  
+				 
+			</td>
+<td class="text">Ensure that User Dot-Files are not World-writable 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1057</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4090-7  
+				 
+			</td>
+<td class="text">Ensure that User Home Directories are not Group-Writable or World-Readable 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1054</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14939-3  
+				 
+			</td>
+<td class="text">Limit password reuse 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1053</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14063-2  
+				 
+			</td>
+<td class="text">Set Password hashing algorithm 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1052</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">TBD  
+				 
+			</td>
+<td class="text">Set pam_passwdqc min parameter 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1051</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14701-7  
+				 
+			</td>
+<td class="text">Set Password difok Requirements 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1050</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14712-4  
+				 
+			</td>
+<td class="text">Set Password lcredit Requirements 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1049</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14122-6  
+				 
+			</td>
+<td class="text">Set Password ocredit Requirements 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1048</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14672-0  
+				 
+			</td>
+<td class="text">Set Password ucredit Requirements 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1047</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14113-5  
+				 
+			</td>
+<td class="text">Set Password dcredit Requirements 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1046</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4154-1  
+				 
+			</td>
+<td class="text">Set Minimum Password Length Requirement 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1038</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3987-5  
+				 
+			</td>
+<td class="text">Block Shell and Login Access for Non-Root System Accounts 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1037</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-15047-4  
+				 
+			</td>
+<td class="text">Limit command Access to the Root Account 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1034</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">TBD  
+				 
+			</td>
+<td class="text">Prevent Root Logins to Virtual Consoles 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1030</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-4225-9  
+				 
+			</td>
+<td class="text">Disable Core Dumps 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1009</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-14931-0  
+				 
+			</td>
+<td class="text">Verify Package Integrity Using RPM 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1006</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3416-5  
+				 
+			</td>
+<td class="text">Disable the rhnsd Daemon 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1004</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">TBD  
+				 
+			</td>
+<td class="text">Ensure that /home has its own partition or logical volume 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1003</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">TBD  
+				 
+			</td>
+<td class="text">Ensure that /var/log/audit has its own partition or logical volume 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1002</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">TBD  
+				 
+			</td>
+<td class="text">Ensure that /var/log has its own partition or logical volum 
+			</td>
+</tr>
+<tr class="neB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1001</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">TBD  
+				 
+			</td>
+<td class="text">Ensure that /var has its own partition or logical volume 
+			</td>
+</tr>
+<tr class="neA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1000</td>
+<td class="text" align="center">not evaluated</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">TBD  
+				 
+			</td>
+<td class="text">Ensure that /tmp has its own partition or logical volume 
+			</td>
+</tr>
+<tr class="falseA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1125</td>
+<td class="text" align="center">false</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-17248-6  
+				 
+			</td>
+<td class="text">Rsyslog shouldn't be run in a compatibility mode 
+			</td>
+</tr>
+<tr class="falseB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1035</td>
+<td class="text" align="center">false</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">TBD  
+				 
+			</td>
+<td class="text">Prevent Root Logins to Serial Consoles 
+			</td>
+</tr>
+<tr class="falseA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1025</td>
+<td class="text" align="center">false</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3324-1  
+				 
+			</td>
+<td class="text">Find Unauthorized SUID System Executables 
+			</td>
+</tr>
+<tr class="falseB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1023</td>
+<td class="text" align="center">false</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3795-2  
+				 
+			</td>
+<td class="text">Find Unauthorized World-Writable Files 
+			</td>
+</tr>
+<tr class="falseA">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1022</td>
+<td class="text" align="center">false</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">CCE-3399-3  
+				 
+			</td>
+<td class="text">Verify that All World-Writable Directories Have Sticky Bits Set 
+			</td>
+</tr>
+<tr class="falseB">
+<td class="text" align="center">oval:org.open-scap.rhel6:def:1008</td>
+<td class="text" align="center">false</td>
+<td class="text" align="center">compliance</td>
+<td class="text" align="center">TBD  
+				 
+			</td>
+<td class="text">Ensure Package Signature Checking is Not Disabled For Any Repos 
+			</td>
+</tr>
+</table>
+</body>
+</html>
