@@ -7,3 +7,5 @@ wget https://jenkins.open-scap.org/job/static_openscap_docs/lastSuccessfulBuild/
 unzip static.open-scap.org.zip
 rm static.open-scap.org.zip
 popd
+
+exec /usr/libexec/s2i/run
